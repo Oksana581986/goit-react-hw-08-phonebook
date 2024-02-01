@@ -1,0 +1,12 @@
+.navLink {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px;
+    font-weight: 700;
+    color: black;
+    font-size: 18px;
+  }
+  
+  .navLink.active {
+    color: #e84a5f;
+  }

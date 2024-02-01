@@ -1,0 +1,37 @@
+.item {
+    text-align: left;
+    font-style: italic;
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+
+  .button_delete {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    width: 60px;
+    height: 35px;
+    cursor: pointer;
+    font-weight: 650;
+    font-family: italic;
+    border: 2px solid green;
+    background-color: green;
+    color: white;
+    box-shadow: 6px 6px 9px -1px rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: 6px 6px 9px -1px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: 6px 6px 9px -1px rgba(0, 0, 0, 0.47);
+    padding: 5px;
+  }
+  
+  .button_delete:hover,
+  .button_delete:focus {
+    cursor: pointer;
+    border: 2px solid purple;
+    background-color: purple;
+    font-weight: 700;
+    border-radius: 7px;
+    color: white;
+    position: relative;
+  }

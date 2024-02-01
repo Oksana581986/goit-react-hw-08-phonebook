@@ -1,0 +1,59 @@
+.regForm {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 25px;
+  border: none;
+  padding: 30px;
+  border-radius: 5px;
+  background-color: orange;
+  box-shadow: 6px 6px 9px -1px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 6px 6px 9px -1px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 6px 6px 9px -1px rgba(0, 0, 0, 0.47);
+  margin-bottom: 20px;
+  margin: 0 auto;
+  }
+  
+  .regInput {
+    margin-left: 15px;
+    border-radius: 5px;
+    background-color: #f4f7d4;
+    border: 1px solid goldenrod;
+    padding: 3px;
+  }
+
+  .regInput:hover,
+  .regInput:focus {
+    border: 1px solid green;
+  }
+
+  .regBtn {
+    width: 80px;
+    height: 60px;
+    cursor: pointer;
+    border: 2px solid green;
+    box-shadow: 6px 6px 9px -1px rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: 6px 6px 9px -1px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: 6px 6px 9px -1px rgba(0, 0, 0, 0.47);
+    font-weight: 900;
+    background-color: green;
+    color: white;
+    font-family: italic;
+    font-size: 15px;
+    margin: 8px;
+  }
+
+  .regBtn:hover,
+  .regBtn:focus {
+    cursor: pointer;
+    border: 2px solid purple;
+    background-color: purple;
+  }
+
+  .label {
+    font-weight: 600;
+  }

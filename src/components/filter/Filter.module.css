@@ -1,0 +1,32 @@
+.wrapperFilter {
+    width: 320px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: orange;
+    box-shadow: 6px 6px 9px -1px rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: 6px 6px 9px -1px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: 6px 6px 9px -1px rgba(0, 0, 0, 0.47);
+    margin-bottom: 20px;
+  }
+  
+  .input {
+    border-radius: 5px;
+    background-color: lightgoldenrodyellow;
+    border: 1px solid goldenrod;
+    padding: 3px;
+  }
+  
+  .input:hover,
+  .input:focus {
+    border: 1px solid green;
+  }
+  
+  .label {
+    margin-bottom: 5px;
+    text-align: center;
+    font-weight: 600;
+  }
