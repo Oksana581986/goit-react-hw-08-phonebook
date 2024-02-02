@@ -7,7 +7,11 @@
     font-size: 18px;
   }
   
-  .link.active {
+  .active {
     color: green;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
   }
   
