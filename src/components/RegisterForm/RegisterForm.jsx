@@ -6,9 +6,13 @@ import css from './RegisterForm.module.css';
 export const RegisterForm = () => {
     const dispatch = useDispatch();
   
-    const handleSubmit = e => {
-      e.preventDefault();
-      const form = e.currentTarget;
+    const handleSubmit = event => {
+      event.preventDefault();
+      const form = event.currentTarget;
+      console.log(event);
+      console.log(form.elements.name.value);
+      console.log(form.elements.email.value);
+      console.log(form.elements.password.value);
       
       dispatch(
         register({
