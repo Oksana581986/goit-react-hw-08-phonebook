@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { logIn } from '../../redux/auth/operations';
+import { NotificationManager } from 'react-notifications';
 import css from './LoginForm.module.css';
 
 export const LoginForm = () => {
@@ -15,8 +16,12 @@ export const LoginForm = () => {
             email: form.elements.email.value,
             password: form.elements.password.value,
           })
-        );
-        form.reset();
+        )
+        .then(form.reset)
+        .catch(error => {
+          console.error("Login failed:", error);
+          NotificationManager.error("Login failed. Please try again.");
+        });
       };
     
       return (

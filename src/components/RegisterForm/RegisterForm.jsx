@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { register } from '../../redux/auth/operations';
+import { NotificationManager } from 'react-notifications';
 import css from './RegisterForm.module.css';
 
 
@@ -20,8 +21,12 @@ export const RegisterForm = () => {
           email: form.elements.email.value,
           password: form.elements.password.value,
         })
-      );
-      form.reset();
+      )
+      .then(form.reset)
+      .catch(error => {
+        console.error("Registration failed:", error);
+        NotificationManager.error("Registration failed. Please try again.");
+      });
     };
   
     return (
@@ -42,4 +47,5 @@ export const RegisterForm = () => {
       </form>
     );
   };
+
   
